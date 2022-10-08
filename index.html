@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="./styles.css">
 
   <title>Frontend Mentor | Interactive rating component</title>
@@ -20,21 +21,30 @@
   <!-- Rating state start -->
   <main class="rating-container">
     <img src="./images/icon-star.svg" alt="">
-    <h1>How did we do?</h1>
-    <p>Please let us know how we did with your support request. All feedback is appreciated
+    <h1 class="rating-title">How did we do?</h1>
+    <p class="rating-info">Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
     <section class="rate-section">
-      <button id="rate-1">1</button>
-      <button id="rate-2">2</button>
-      <button id="rate-3">3</button>
-      <button id="rate-4">4</button>
-      <button id="rate-5">5</button>
+      <button id="rate-1" class="">1</button>
+      <button id="rate-2" class="">2</button>
+      <button id="rate-3" class="">3</button>
+      <button id="rate-4" class="">4</button>
+      <button id="rate-5" class="">5</button>
     </section>
-    <button type="button">SUBMIT</button>
+    <button id='submit' type="button">SUBMIT</button>
   </main>
+
+  <section class="rating-container-thanks thanks">
+    <img src="./images/illustration-thank-you.svg" alt="thanks">
+    <h3>You selected <span id="rate-selected">4</span> out of 5</h3>
+    <h1>Thank you!</h1>
+    <p>We aprecciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
+      touch!</p>
+  </section>
+
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.github.com/CodeBreaker518">CodeBreaker518</a>.
   </footer>
 
 </body>
