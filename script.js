@@ -7,6 +7,7 @@ const submit = document.querySelector('#submit')
 const thanks = document.querySelector('.rating-container-thanks')
 const mainContainer = document.querySelector('.rating-container')
 const valueRate = document.querySelector('#rate-selected')
+const btnGoBack = document.querySelector('#goBack')
 valueRate.innerText = '0'
 
 const changeColor = (ev) =>{
@@ -25,6 +26,17 @@ const submitRate = () =>{
     thanks.classList.toggle('inactive')
   }, 1000);
 }
+const goBack = () =>{
+ setTimeout(() => {
+  button1.classList.remove('selected')
+  button2.classList.remove('selected')
+  button3.classList.remove('selected')
+  button4.classList.remove('selected')
+  button5.classList.remove('selected')
+  mainContainer.classList.toggle('inactive')
+  thanks.classList.toggle('inactive')
+  }, 1000);
+}
 
 button1.addEventListener('click', changeColor)
 button2.addEventListener('click', changeColor)
@@ -32,4 +44,4 @@ button3.addEventListener('click', changeColor)
 button4.addEventListener('click', changeColor)
 button5.addEventListener('click', changeColor)
 submit.addEventListener('click', submitRate)
-
+btnGoBack.addEventListener('click',goBack)

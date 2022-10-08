@@ -7,6 +7,7 @@
 --very-dark-blue: hsl(216, 12%, 8%);
 }
 *{
+  user-select: none;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -140,6 +141,24 @@ body{
 .rating-container-thanks p{
   color: var(--light-grey);
 }
+
+.header-thanks{
+  display: flex;
+  gap: 1.5rem;
+}
+#goBack{
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 0.6rem;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  background: var(--dark-blue);
+}
+#goBack:hover{
+  background: var(--medium-grey);
+}
+
 /* initial styles */
 .attribution { 
   font-size: 11px; 
