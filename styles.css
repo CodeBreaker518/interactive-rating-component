@@ -17,6 +17,10 @@
 .thanks{
   position: absolute;
 }
+.selected{
+  background: var(--orange) !important;
+  color: var(--white) !important;
+}
 body{
   min-width: 430px;
   min-height: 100vh;
@@ -78,10 +82,7 @@ body{
   background: var(--light-grey);
   color: var(--white);
 }
-.selected{
-  background: var(--orange) !important;
-  color: var(--white) !important;
-}
+
 #submit{
   line-height: 0rem;
   cursor: pointer;
