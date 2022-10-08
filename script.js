@@ -7,6 +7,7 @@ const submit = document.querySelector('#submit')
 const thanks = document.querySelector('.rating-container-thanks')
 const mainContainer = document.querySelector('.rating-container')
 const valueRate = document.querySelector('#rate-selected')
+valueRate.innerText = '0'
 
 const changeColor = (ev) =>{
   button1.classList.remove('selected')
